@@ -3,3 +3,11 @@
 ################################################################################
 
 *.dtbcache
+*.lock
+*.ide
+*.ide-shm
+*.ide-wal
+*.suo
+/.vs/config/applicationhost.config
+/ApplicationLogs.Tests/obj
+/ApplicationLogs/obj
