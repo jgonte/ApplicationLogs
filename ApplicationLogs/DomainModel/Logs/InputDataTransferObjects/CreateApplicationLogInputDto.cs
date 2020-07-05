@@ -29,13 +29,13 @@ namespace ApplicationLogs.Logs
 
         public virtual void Validate(ValidationResult result)
         {
-            ((int)Type).ValidateNotZero(result, nameof(Type));
+            ((int)Type).ValidateRequired(result, nameof(Type));
 
             UserId.ValidateMaxLength(result, nameof(UserId), 50);
 
             Source.ValidateMaxLength(result, nameof(Source), 256);
 
-            Message.ValidateNotEmpty(result, nameof(Message));
+            Message.ValidateRequired(result, nameof(Message));
 
             Message.ValidateMaxLength(result, nameof(Message), 1024);
 
